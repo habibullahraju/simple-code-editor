@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibullah Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fc89e0e267.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-200">
+    <main class="bg-blue-300 w-9/12 mx-auto mt-10 rounded-xl border-black border-2">
+        <header>
+            <h1 class="text-center text-4xl font-semibold py-6">Habibullah Text Editor</h1>
+        </header>
+        <section class="bg-gray-200  ">
+         <div class="grid grid-cols-3 p-2">
+            <div>
+                <button onclick="f1()" id="btn-bold"><i class="fa-solid fa-bold"></i></button>
+                <button id="btn-italic" class="mx-2"><i class="fa-solid fa-italic"></i></button>
+                <button id="btn-underline"><i class="fa-solid fa-underline"></i></button>
+               </div>
+    
+               <div>
+                <button id="btn-left-align"><i class="fa-solid fa-align-left"></i></button>
+                <button id="btn-center-align" class="mx-2"><i class="fa-solid fa-align-center"></i></button>
+                <button id="btn-right-align"><i class="fa-solid fa-align-right"></i></button>
+                <button id="btn-justify-align" class="mx-2"><i class="fa-solid fa-align-justify"></i></button>
+               </div>
+    
+               <div>
+                    <input onclick="font(e)" class="w-10" type="number" name="" id="increase-font">
+                    <button  class="mx-2"><i class="fa-solid fa-font"></i></button>
+                    <input type="color" name="" id="btn-color">
+               </div>
+            
+         </div>
+         
+
+         <textarea name="" id="text-area-feld" class="w-full border-8 p-2" cols="120" rows="15"></textarea>
+         
+
+        </section>
+    </main>
+    <script src="./js/calculator.js"></script>
+</body>
+</html>
